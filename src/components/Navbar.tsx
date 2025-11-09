@@ -19,9 +19,9 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <Factory className="h-6 w-6 text-primary" />
-          <span className="font-bold text-lg text-foreground">Industrial Revolutions</span>
+          <span className="font-bold text-lg text-foreground">Cách mạng công nghiệp</span>
         </Link>
-        
+
         <ul className="flex items-center space-x-1">
           {navItems.map((item) => (
             <li key={item.path}>

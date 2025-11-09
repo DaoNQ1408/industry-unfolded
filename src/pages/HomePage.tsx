@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-hero py-20 px-4">
         <div className="container mx-auto text-center">
@@ -19,7 +19,7 @@ const HomePage = () => {
           <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-primary-foreground">
             4 Cuộc Cách Mạng Công Nghiệp
           </h1>
-          <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8">
+          <p className="text-xl font-semibold text-primary-foreground/90 max-w-2xl mx-auto mb-8">
             Khám phá hành trình phát triển công nghệ từ máy hơi nước đến trí tuệ nhân tạo
           </p>
           <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90">
@@ -35,7 +35,7 @@ const HomePage = () => {
         <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
           Các cuộc cách mạng công nghiệp
         </h2>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {revolutionsData.map((revolution, index) => (
             <Link key={revolution.id} to={`/revolution-${revolution.id}`}>
@@ -60,7 +60,7 @@ const HomePage = () => {
           <h2 className="text-3xl font-bold mb-4 text-primary-foreground">
             Kiểm tra kiến thức của bạn
           </h2>
-          <p className="text-primary-foreground/90 mb-6 max-w-2xl mx-auto">
+          <p className="text-primary-foreground/90 font-semibold mb-6 max-w-2xl mx-auto">
             Hoàn thành bài kiểm tra để đánh giá mức độ hiểu biết của bạn về 4 cuộc cách mạng công nghiệp
           </p>
           <Button asChild size="lg" variant="secondary">

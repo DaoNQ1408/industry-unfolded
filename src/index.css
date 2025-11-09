@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 210 30% 98%;
+    /* --background: 210 30% 98%; */
+    --background: 0 0% 80%;
     --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
@@ -19,6 +20,7 @@ All colors MUST be HSL.
 
     --primary: 210 90% 48%;
     --primary-foreground: 0 0% 100%;
+    --primary-shadow: 0 4px 20px hsla(210, 90%, 48%, 0.25);
 
     --secondary: 30 95% 55%;
     --secondary-foreground: 0 0% 100%;
@@ -43,11 +45,20 @@ All colors MUST be HSL.
     --revolution-3: 280 75% 55%;
     --revolution-4: 155 85% 45%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(210 90% 48%) 0%, hsl(190 85% 45%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(215 35% 20%) 0%, hsl(210 90% 48%) 100%);
-    
+    --gradient-primary: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)),
+                     url('/src/image/homepage_background.jpg');
+    --gradient-hero: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)),
+                     url('/src/image/homepage_background.jpg');
+
     --shadow-soft: 0 4px 20px hsla(210, 90%, 48%, 0.12);
     --shadow-medium: 0 8px 30px hsla(210, 90%, 48%, 0.18);
+  }
+
+  .bg-gradient-hero, .bg-gradient-primary {
+  background-image: var(--gradient-hero);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   }
 
   .dark {
@@ -86,7 +97,7 @@ All colors MUST be HSL.
 
     --gradient-primary: linear-gradient(135deg, hsl(210 90% 55%) 0%, hsl(190 85% 50%) 100%);
     --gradient-hero: linear-gradient(135deg, hsl(215 30% 8%) 0%, hsl(210 90% 25%) 100%);
-    
+
     --shadow-soft: 0 4px 20px hsla(210, 90%, 55%, 0.15);
     --shadow-medium: 0 8px 30px hsla(210, 90%, 55%, 0.22);
   }
