@@ -11,7 +11,7 @@ const Navbar = () => {
     { path: "/revolution-2", label: "Cách mạng 2.0" },
     { path: "/revolution-3", label: "Cách mạng 3.0" },
     { path: "/revolution-4", label: "Cách mạng 4.0" },
-    { path: "/quiz", label: "Kiểm tra" },
+    { path: "/quiz", label: "Quiz" },
   ];
 
   return (

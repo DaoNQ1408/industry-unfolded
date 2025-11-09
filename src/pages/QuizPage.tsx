@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { quizData, QuizQuestion } from "@/data/quizData";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -8,11 +8,23 @@ import Navbar from "@/components/Navbar";
 import { CheckCircle2, XCircle, RotateCcw } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+// Hàm random lấy n câu hỏi từ mảng
+const getRandomQuestions = (questions: QuizQuestion[], count: number): QuizQuestion[] => {
+  const shuffled = [...questions].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, count);
+};
+
 const QuizPage = () => {
+  const [randomQuestions, setRandomQuestions] = useState<QuizQuestion[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<{ [key: string]: string }>({});
   const [showResults, setShowResults] = useState(false);
   const [answeredQuestions, setAnsweredQuestions] = useState<Set<number>>(new Set());
+
+  // Lấy random 10 câu hỏi khi component mount
+  useEffect(() => {
+    setRandomQuestions(getRandomQuestions(quizData, 10));
+  }, []);
 
   const handleAnswerSelect = (questionId: string, optionId: string) => {
     if (!answeredQuestions.has(currentQuestion)) {
@@ -22,7 +34,7 @@ const QuizPage = () => {
   };
 
   const handleNext = () => {
-    if (currentQuestion < quizData.length - 1) {
+    if (currentQuestion < randomQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       setShowResults(true);
@@ -37,7 +49,7 @@ const QuizPage = () => {
 
   const calculateScore = () => {
     let score = 0;
-    quizData.forEach((question) => {
+    randomQuestions.forEach((question) => {
       const selectedOption = question.options.find(
         (opt) => opt.id === selectedAnswers[question.id]
       );
@@ -48,11 +60,12 @@ const QuizPage = () => {
     return score;
   };
 
-  const totalPoints = quizData.reduce((sum, q) => sum + q.points, 0);
+  const totalPoints = randomQuestions.reduce((sum, q) => sum + q.points, 0);
   const score = calculateScore();
   const percentage = (score / totalPoints) * 100;
 
   const resetQuiz = () => {
+    setRandomQuestions(getRandomQuestions(quizData, 10)); // Lấy random 10 câu mới
     setCurrentQuestion(0);
     setSelectedAnswers({});
     setShowResults(false);
@@ -66,7 +79,7 @@ const QuizPage = () => {
         <div className="container mx-auto py-12 px-4">
           <Card className="max-w-2xl mx-auto p-8 shadow-medium text-center">
             <h1 className="text-4xl font-bold mb-6 text-foreground">Kết quả kiểm tra</h1>
-            
+
             <div className="mb-8">
               <div className="text-6xl font-bold text-primary mb-4">
                 {score}/{totalPoints}
@@ -78,7 +91,7 @@ const QuizPage = () => {
             </div>
 
             <div className="space-y-4 mb-8 text-left">
-              {quizData.map((question, index) => {
+              {randomQuestions.map((question, index) => {
                 const selectedOption = question.options.find(
                   (opt) => opt.id === selectedAnswers[question.id]
                 );
@@ -124,13 +137,27 @@ const QuizPage = () => {
     );
   }
 
-  const question = quizData[currentQuestion];
-  const progress = ((currentQuestion + 1) / quizData.length) * 100;
+  // Hiển thị loading nếu chưa có câu hỏi
+  if (randomQuestions.length === 0) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        <div className="container mx-auto py-12 px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-xl text-muted-foreground">Đang tải câu hỏi...</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const question = randomQuestions[currentQuestion];
+  const progress = ((currentQuestion + 1) / randomQuestions.length) * 100;
 
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       <div className="container mx-auto py-12 px-4">
         <div className="max-w-3xl mx-auto">
           <Card className="p-8 shadow-medium">
@@ -138,7 +165,7 @@ const QuizPage = () => {
             <div className="mb-8">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm font-medium text-muted-foreground">
-                  Câu hỏi {currentQuestion + 1}/{quizData.length}
+                  Câu hỏi {currentQuestion + 1}/{randomQuestions.length}
                 </span>
                 <Badge>{question.points} điểm</Badge>
               </div>
@@ -191,13 +218,13 @@ const QuizPage = () => {
               >
                 Câu trước
               </Button>
-              
+
               <Button
                 onClick={handleNext}
                 disabled={!selectedAnswers[question.id]}
                 className="bg-primary"
               >
-                {currentQuestion === quizData.length - 1 ? "Xem kết quả" : "Câu tiếp theo"}
+                {currentQuestion === randomQuestions.length - 1 ? "Xem kết quả" : "Câu tiếp theo"}
               </Button>
             </div>
           </Card>
