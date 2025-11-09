@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 const RevolutionPage = () => {
   const { id } = useParams<{ id: string }>();
   const revolutionId = parseInt(id || "1");
-  
+
   const revolution = revolutionsData.find(r => r.id === revolutionId);
 
   if (!revolution) {
@@ -17,7 +17,7 @@ const RevolutionPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       <div className="container mx-auto py-12 px-4">
         {/* Header */}
         <Card className="p-8 mb-12 shadow-soft">
@@ -27,9 +27,9 @@ const RevolutionPage = () => {
             </div>
             <div>
               <h1 className="text-4xl font-bold mb-2 text-foreground">
-                {revolution.title}
+                {revolution.title} - {revolution.engTitle}
               </h1>
-              <p className="text-xl text-muted-foreground mb-4">{revolution.period}</p>
+              <p className="text-xl text-muted-foreground mb-4">{revolution.period} | {revolution.location}</p>
               <p className="text-foreground/80 leading-relaxed">
                 {revolution.description}
               </p>

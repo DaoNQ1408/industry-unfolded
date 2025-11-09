@@ -27,9 +27,9 @@ const RevolutionPage2 = () => {
             </div>
             <div>
               <h1 className="text-4xl font-bold mb-2 text-foreground">
-                {revolution.title}
+                {revolution.title} - {revolution.engTitle}
               </h1>
-              <p className="text-xl text-muted-foreground mb-4">{revolution.period}</p>
+              <p className="text-xl text-muted-foreground mb-4">{revolution.period} | {revolution.location}</p>
               <p className="text-foreground/80 leading-relaxed">
                 {revolution.description}
               </p>

@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* --background: 210 30% 98%; */
-    --background: 0 0% 80%;
+    --background: 0 0% 93%;
     --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
@@ -21,6 +21,9 @@ All colors MUST be HSL.
     --primary: 210 90% 48%;
     --primary-foreground: 0 0% 100%;
     --primary-shadow: 0 4px 20px hsla(210, 90%, 48%, 0.25);
+    --nav-active-bg: 0 0% 80%;
+    --nav-active-text: 0 0% 0%;
+    --nav-hover-bg: 210 90% 55%;
 
     --secondary: 30 95% 55%;
     --secondary-foreground: 0 0% 100%;
@@ -46,12 +49,14 @@ All colors MUST be HSL.
     --revolution-4: 155 85% 45%;
 
     --gradient-primary: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)),
-                     url('/src/image/homepage_background.jpg');
+                     url('https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762715128/homepage_background_p1zacn.jpg');
     --gradient-hero: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)),
-                     url('/src/image/homepage_background.jpg');
+                     url('https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762715128/homepage_background_p1zacn.jpg');
 
     --shadow-soft: 0 4px 20px hsla(210, 90%, 48%, 0.12);
     --shadow-medium: 0 8px 30px hsla(210, 90%, 48%, 0.18);
+
+
   }
 
   .bg-gradient-hero, .bg-gradient-primary {

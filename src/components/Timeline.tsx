@@ -10,24 +10,34 @@ interface TimelineProps {
 }
 
 const Timeline = ({ events, color }: TimelineProps) => {
-  const [selectedEvent, setSelectedEvent] = useState<Event | null>(events[0] || null);
+  const [selectedEvent, setSelectedEvent] = useState<Event | null>(
+    events[0] || null
+  );
 
   return (
     <div className="grid lg:grid-cols-2 gap-8">
       {/* Timeline */}
       <div className="space-y-6">
-        <h3 className="text-xl font-semibold text-foreground mb-6">Dòng thời gian</h3>
+        <h3 className="text-xl font-semibold text-foreground mb-6">
+          Dòng thời gian
+        </h3>
         <div className="relative">
           {/* Vertical line */}
-          <div className={cn("absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-transparent via-border to-transparent")} />
-          
+          <div
+            className={cn(
+              "absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-transparent via-border to-transparent"
+            )}
+          />
+
           <div className="space-y-6">
             {events.map((event, index) => (
               <div
                 key={event.id}
                 className={cn(
                   "relative pl-12 cursor-pointer transition-all duration-300",
-                  selectedEvent?.id === event.id ? "scale-105" : "hover:scale-102"
+                  selectedEvent?.id === event.id
+                    ? "scale-105"
+                    : "hover:scale-102"
                 )}
                 onClick={() => setSelectedEvent(event)}
               >
@@ -40,7 +50,7 @@ const Timeline = ({ events, color }: TimelineProps) => {
                       : "bg-muted hover:bg-muted-foreground/20"
                   )}
                 />
-                
+
                 <Card
                   className={cn(
                     "p-4 transition-all duration-300",
@@ -49,10 +59,15 @@ const Timeline = ({ events, color }: TimelineProps) => {
                       : "hover:shadow-soft"
                   )}
                 >
-                  <Badge className={cn("mb-2", selectedEvent?.id === event.id && `bg-${color}`)}>
+                  <Badge
+                    className={cn("mb-2", selectedEvent?.id === event.id)}
+                    style={{ backgroundColor: "#CBCBCB", color: "#000000" }}
+                  >
                     {event.year}
                   </Badge>
-                  <h4 className="font-semibold text-foreground">{event.title}</h4>
+                  <h4 className="font-semibold text-foreground">
+                    {event.title}
+                  </h4>
                 </Card>
               </div>
             ))}
@@ -72,15 +87,23 @@ const Timeline = ({ events, color }: TimelineProps) => {
               />
             </div>
             <div className="p-6">
-              <Badge className={`mb-3 bg-${color}`}>
+              <Badge
+                className={`mb-3`}
+                style={{ backgroundColor: "#CBCBCB", color: "#000000" }}
+              >
                 {selectedEvent.year}
               </Badge>
               <h3 className="text-2xl font-bold mb-4 text-foreground">
                 {selectedEvent.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              {/* <p className="text-muted-foreground leading-relaxed">
                 {selectedEvent.description}
-              </p>
+              </p> */}
+              <div className="text-muted-foreground leading-relaxed space-y-2">
+                {selectedEvent.descriptions.map((desc, index) => (
+                  <p key={index}>{desc.content}</p>
+                ))}
+              </div>
             </div>
           </Card>
         )}

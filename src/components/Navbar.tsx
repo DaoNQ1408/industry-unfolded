@@ -19,7 +19,9 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <Factory className="h-6 w-6 text-primary" />
-          <span className="font-bold text-lg text-foreground">Cách mạng công nghiệp</span>
+          <span className="font-bold text-lg text-foreground">
+            Cách mạng công nghiệp
+          </span>
         </Link>
 
         <ul className="flex items-center space-x-1">
@@ -28,10 +30,10 @@ const Navbar = () => {
               <Link
                 to={item.path}
                 className={cn(
-                  "px-4 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-muted",
+                  "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200",
                   location.pathname === item.path
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                    : "text-foreground"
+                    ? "bg-[hsl(var(--nav-active-bg))] text-[hsl(var(--nav-active-text))] shadow-md"
+                    : "text-foreground hover:bg-[hsl(var(--nav-hover-bg))]/20 hover:text-[hsl(var(--nav-active-bg))]"
                 )}
               >
                 {item.label}

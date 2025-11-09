@@ -44,9 +44,9 @@ const HomePage = () => {
                   <span className="text-2xl font-bold text-white">{revolution.id}</span>
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
-                  {revolution.title}
+                  {revolution.engTitle}
                 </h3>
-                <p className="text-sm text-muted-foreground mb-3">{revolution.period}</p>
+                <p className="text-sm text-muted-foreground mb-3">{revolution.period} | {revolution.location}</p>
                 <p className="text-sm text-foreground/80">{revolution.description}</p>
               </Card>
             </Link>
