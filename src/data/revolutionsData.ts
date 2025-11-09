@@ -647,7 +647,7 @@ export const revolutionsData: Revolution[] = [
       },
       {
         id: "1-9",
-        year: " ",
+        year: "Tác động",
         title: "Tác động chính",
         descriptions: [
           {
@@ -694,114 +694,293 @@ export const revolutionsData: Revolution[] = [
           {
             id: 1,
             content:
-              "James Hargreaves phát minh ra máy kéo sợi Jenny, cho phép một người có thể kéo nhiều sợi cùng lúc, tăng năng suất dệt may đáng kể.",
+              "Alexander Graham Bell được cấp bằng sáng chế cho điện thoại vào năm 1876.",
+          },
+          {
+            id: 2,
+            content:
+              "Phát minh này cho phép truyền giọng nói con người trực tiếp qua dây dẫn điện, tạo ra một cuộc cách mạng trong giao tiếp cá nhân và kinh doanh.",
+          },
+          {
+            id: 3,
+            content:
+              "Không giống như điện báo (chỉ truyền mã), điện thoại cho phép giao tiếp tức thời, hai chiều bằng ngôn ngữ tự nhiên, kết nối các thành phố và gia đình.",
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1577563682092-f5939f04e28b?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762720787/telephone_kqrnqa.jpg",
       },
       {
         id: "2-2",
         year: "1879",
-        title: "Bóng đèn điện",
+        title: "Thương mại hóa bóng đèn điện",
         descriptions: [
           {
             id: 1,
             content:
-              "James Hargreaves phát minh ra máy kéo sợi Jenny, cho phép một người có thể kéo nhiều sợi cùng lúc, tăng năng suất dệt may đáng kể.",
+              "Thomas Edison đã phát minh và trình diễn bóng đèn sợi đốt carbon thực tế, có tuổi thọ cao đầu tiên vào năm 1879.",
+          },
+          {
+            id: 2,
+            content:
+              "Đây không chỉ là phát minh ra bóng đèn, mà còn là sự khởi đầu của cả một hệ thống: Edison cũng phát triển hệ thống phân phối điện một chiều (DC) để cung cấp năng lượng cho chúng.",
+          },
+          {
+            id: 3,
+            content:
+              "Đóng góp: Ánh sáng điện đã giải phóng các nhà máy và thành phố khỏi sự phụ thuộc vào ánh sáng ban ngày hoặc ánh sáng khí gas nguy hiểm.",
+          },
+          {
+            id: 4,
+            content:
+              "Nó cho phép làm việc 24/7 một cách an toàn và hiệu quả, thay đổi hoàn toàn nhịp sống đô thị và năng suất công nghiệp.",
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762720914/lightbulbs_ol7mp2.jpg",
       },
       {
         id: "2-3",
         year: "1886",
-        title: "Ô tô đầu tiên",
+        title: "Ô tô chạy xăng đầu tiên",
         descriptions: [
           {
             id: 1,
             content:
-              "James Hargreaves phát minh ra máy kéo sợi Jenny, cho phép một người có thể kéo nhiều sợi cùng lúc, tăng năng suất dệt may đáng kể.",
+              "Karl Benz (người Đức) được công nhận với việc tạo ra chiếc ô tô chạy bằng động cơ đốt trong đầu tiên, Benz Patent-Motorwagen, vào năm 1886.",
+          },
+          {
+            id: 2,
+            content:
+              "Phát minh này kết hợp hai công nghệ cốt lõi của 2.0: động cơ đốt trong (sử dụng xăng, một sản phẩm từ dầu mỏ) và cơ khí chính xác.",
+          },
+          {
+            id: 3,
+            content:
+              "Nó mở ra kỷ nguyên vận tải cá nhân, giải phóng con người khỏi sự phụ thuộc vào ngựa và các tuyến đường sắt cố định, đặt nền móng cho sản xuất hàng loạt.",
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762721095/benz_maqsbd.jpg",
       },
       {
         id: "2-4",
+        year: "1888",
+        title: "Hệ thống điện xoay chiều (AC)",
+        descriptions: [
+          {
+            id: 1,
+            content:
+              'Dựa trên công trình của Nikola Tesla, George Westinghouse đã giành chiến thắng trong "Cuộc chiến dòng điện" (War of Currents) chống lại hệ thống một chiều (DC) của Edison.',
+          },
+          {
+            id: 2,
+            content:
+              "Hệ thống AC (dòng điện xoay chiều) có thể truyền đi xa hàng trăm dặm với mức tổn thất điện năng thấp.",
+          },
+          {
+            id: 3,
+            content:
+              'Đóng góp: Đây là công nghệ cho phép "điện khí hóa" toàn bộ quốc gia, đưa điện từ các nhà máy thủy điện đến các thành phố và nhà máy công nghiệp ở xa.',
+          },
+        ],
+        imageUrl:
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762721150/ac_rj8mg7.jpg",
+      },
+      {
+        id: "2-5",
         year: "1903",
         title: "Máy bay đầu tiên",
         descriptions: [
           {
             id: 1,
             content:
-              "Anh em nhà Wright thực hiện chuyến bay có động cơ đầu tiên thành công.",
+              "Vào ngày 17 tháng 12 năm 1903, Anh em nhà Wright (Orville và Wilbur) đã thực hiện chuyến bay có điều khiển, duy trì, và sử dụng động cơ nặng hơn không khí đầu tiên.",
+          },
+          {
+            id: 2,
+            content:
+              "Chiếc máy bay, Wright Flyer, sử dụng một động cơ đốt trong nhỏ, nhẹ do chính họ thiết kế.",
+          },
+          {
+            id: 3,
+            content:
+              "Thành tựu này đã chinh phục bầu trời, mở đường cho ngành hàng không, làm thay đổi vĩnh viễn chiến tranh, thương mại và du lịch toàn cầu.",
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762721220/airplane_mzabsh.jpg",
+      },
+      {
+        id: "2-6",
+        year: "1913",
+        title: "Dây chuyền sản xuất hàng loạt",
+        descriptions: [
+          {
+            id: 1,
+            content:
+              "Henry Ford đã triển khai dây chuyền lắp ráp di động đầu tiên tại nhà máy của mình vào năm 1913 để sản xuất xe Ford Model T.",
+          },
+          {
+            id: 2,
+            content:
+              "Đây là một cuộc cách mạng về quy trình: sản phẩm (khung xe) di chuyển đến công nhân trên một băng chuyền, thay vì công nhân di chuyển đến sản phẩm.",
+          },
+          {
+            id: 3,
+            content:
+              "Kết quả: Thời gian lắp ráp một chiếc xe giảm từ 12 giờ xuống chỉ còn 93 phút.",
+          },
+          {
+            id: 4,
+            content:
+              'Đóng góp: Tạo ra "sản xuất hàng loạt" (mass production), giảm giá thành sản phẩm đột ngột, làm thay đổi hoàn toàn nền kinh tế tiêu dùng.',
+          },
+        ],
+        imageUrl:
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762721314/massproduction_ehhedt.jpg",
+      },
+      {
+        id: "2-7",
+        year: " ",
+        title: "Tác động chính",
+        descriptions: [
+          {
+            id: 1,
+            content:
+              'Bùng nổ sản xuất hàng tiêu dùng (ô tô, đồ gia dụng) với giá rẻ, tạo ra "xã hội tiêu dùng".',
+          },
+          {
+            id: 2,
+            content:
+              "Hình thành các tập đoàn công nghiệp và các công ty đa quốc gia khổng lồ.",
+          },
+          {
+            id: 3,
+            content:
+              "Thay đổi hoàn toàn đời sống xã hội: Ánh sáng điện thay đổi nhịp sống, ô tô thay đổi cấu trúc đô thị.",
+          },
+          {
+            id: 4,
+            content:
+              "Quá trình toàn cầu hóa được đẩy mạnh nhờ giao thông và liên lạc nhanh chóng.",
+          },
+        ],
+        imageUrl:
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762722465/ir2_v1kfrj.jpg",
       },
     ],
   },
   {
     id: 3,
-    title: "Cách mạng công nghiệp lần thứ ba",
-    engTitle: "Mechanization Revolution",
+    title: "Cách mạng Kỹ thuật số",
+    engTitle: "Digital Revolution",
     location: "Toàn cầu",
-    period: "1969 - 2000",
+    period: "1970 - ~2000",
     description:
-      "Kỷ nguyên số hóa với máy tính, internet và tự động hóa. Sự chuyển đổi từ công nghệ tương tự sang công nghệ số.",
+      "Kỷ nguyên của máy tính cá nhân, Internet và tự động hóa sớm. Chuyển đổi từ công nghệ analog sang kỹ thuật số.",
     color: "revolution-3",
     events: [
       {
         id: "3-1",
-        year: "1971",
-        title: "Vi xử lý đầu tiên",
+        year: "1969",
+        title: "Tự động hóa sản xuất",
         descriptions: [
           {
             id: 1,
             content:
-              "James Hargreaves phát minh ra máy kéo sợi Jenny, cho phép một người có thể kéo nhiều sợi cùng lúc, tăng năng suất dệt may đáng kể.",
+              "Sử dụng Robot công nghiệp và đặc biệt là Bộ điều khiển logic khả trình (Programmable logic controller) (phát minh năm 1969).",
+          },
+          {
+            id: 2,
+            content:
+              "PLC hoạt động như bộ não kỹ thuật số, cho phép lập trình và tự động hóa linh hoạt các dây chuyền lắp ráp.",
+          },
+          {
+            id: 3,
+            content:
+              "Công nghệ này đã thay thế lao động chân tay trong các công việc lặp đi lặp lại, tăng năng suất và độ chính xác trong sản xuất.",
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762722175/plc_jztu4u.jpg",
       },
       {
         id: "3-2",
-        year: "1989",
-        title: "World Wide Web",
+        year: "1977",
+        title: "Máy tính cá nhân",
         descriptions: [
           {
             id: 1,
             content:
-              "James Hargreaves phát minh ra máy kéo sợi Jenny, cho phép một người có thể kéo nhiều sợi cùng lúc, tăng năng suất dệt may đáng kể.",
+              "Sự ra đời của các máy tính như Apple II (1977) và IBM PC (1981) đã đưa năng lực tính toán đến với đại chúng.",
+          },
+          {
+            id: 2,
+            content:
+              "Nó thay đổi cơ bản cách thức làm việc, học tập và lưu trữ thông tin, chuyển đổi từ công việc analog (giấy tờ) sang kỹ thuật số.",
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762722184/apple2_jto1yo.jpg",
       },
       {
         id: "3-3",
-        year: "1998",
-        title: "Google được thành lập",
+        year: "1990",
+        title: "Công nghệ thông tin & Internet",
         descriptions: [
           {
             id: 1,
             content:
-              "James Hargreaves phát minh ra máy kéo sợi Jenny, cho phép một người có thể kéo nhiều sợi cùng lúc, tăng năng suất dệt may đáng kể.",
+              "Bắt đầu hình thành mạng lưới kết nối, đặc biệt với sự ra đời của World Wide Web (WWW) của Tim Berners-Lee vào năm 1990.",
+          },
+          {
+            id: 2,
+            content:
+              "Hệ thống này cho phép số hóa và trao đổi thông tin (email, trang web) trên quy mô toàn cầu một cách dễ dàng.",
+          },
+          {
+            id: 3,
+            content:
+              "Nó đặt nền móng vững chắc cho nền kinh tế thông tin, thương mại điện tử và toàn cầu hóa.",
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762722180/internet_aic11w.jpg",
+      },
+      {
+        id: "3-4",
+        year: "Tác động",
+        title: "Tác động chính",
+        descriptions: [
+          {
+            id: 1,
+            content: "Năng suất lao động tăng vọt nhờ tự động hóa.",
+          },
+          {
+            id: 2,
+            content:
+              "Thông tin được số hóa (chuyển từ văn bản giấy, băng từ sang dữ liệu máy tính).",
+          },
+          {
+            id: 3,
+            content:
+              "Hình thành các ngành công nghiệp mới như sản xuất phần mềm, dịch vụ IT.",
+          },
+          {
+            id: 4,
+            content: "Đặt nền móng vững chắc cho cuộc cách mạng tiếp theo.",
+          },
+        ],
+        imageUrl:
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762722529/ir3_m0llnc.jpg",
       },
     ],
   },
   {
     id: 4,
     title: "Cách mạng công nghiệp lần thứ tư",
-    engTitle: "Mechanization Revolution",
+    engTitle: "Fourth Industrial Revolution",
     location: "Toàn cầu",
     period: "2000 - Hiện tại",
     description:
@@ -810,59 +989,127 @@ export const revolutionsData: Revolution[] = [
     events: [
       {
         id: "4-1",
-        year: "2007",
-        title: "iPhone ra đời",
+        year: "Thập niên 2010s",
+        title: "Internet vạn vật (IoT)",
         descriptions: [
           {
             id: 1,
             content:
-              "James Hargreaves phát minh ra máy kéo sợi Jenny, cho phép một người có thể kéo nhiều sợi cùng lúc, tăng năng suất dệt may đáng kể.",
+              "Hàng tỷ thiết bị, cảm biến, máy móc được kết nối với nhau qua Internet.",
+          },
+          {
+            id: 2,
+            content:
+              "Các thiết bị này liên tục thu thập và trao đổi dữ liệu trong thời gian thực, tạo ra một mạng lưới thông tin khổng lồ.",
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762723467/iot_d2fle3.jpg",
       },
       {
         id: "4-2",
-        year: "2012",
-        title: "Deep Learning bùng nổ",
+        year: "Thập niên 2010s",
+        title: "AI & Học máy (Machine Learning)",
         descriptions: [
           {
             id: 1,
             content:
-              "James Hargreaves phát minh ra máy kéo sợi Jenny, cho phép một người có thể kéo nhiều sợi cùng lúc, tăng năng suất dệt may đáng kể.",
+              'Các hệ thống máy tính có khả năng "học" từ dữ liệu, nhận diện mẫu và dự đoán.',
+          },
+          {
+            id: 2,
+            content:
+              "Chúng có thể tự đưa ra quyết định thông minh mà không cần con người can thiệp trực tiếp, là bộ não của Cách mạng 4.0.",
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762723481/AI_qu7kp6.jpg",
       },
       {
         id: "4-3",
-        year: "2015",
-        title: "Internet of Things",
+        year: "Thập niên 2010s",
+        title: "Dữ liệu lớn (Big Data)",
         descriptions: [
           {
             id: 1,
             content:
-              "James Hargreaves phát minh ra máy kéo sợi Jenny, cho phép một người có thể kéo nhiều sợi cùng lúc, tăng năng suất dệt may đáng kể.",
+              "Khả năng thu thập, lưu trữ và phân tích một khối lượng dữ liệu khổng lồ (từ IoT, mạng xã hội, giao dịch...).",
+          },
+          {
+            id: 2,
+            content:
+              'Mục đích là để tìm ra thông tin chi tiết có giá trị, là "nhiên liệu" cho AI và Học máy.',
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762723472/bigdata_btqqu7.jpg",
       },
       {
         id: "4-4",
-        year: "2022",
-        title: "ChatGPT và AI sinh tạo",
+        year: "Thập niên 2000s",
+        title: "Điện toán đám mây (Cloud Computing)",
         descriptions: [
           {
             id: 1,
             content:
-              "James Hargreaves phát minh ra máy kéo sợi Jenny, cho phép một người có thể kéo nhiều sợi cùng lúc, tăng năng suất dệt may đáng kể.",
+              "Cung cấp hạ tầng linh hoạt, theo yêu cầu qua Internet để lưu trữ và xử lý Big Data.",
+          },
+          {
+            id: 2,
+            content:
+              "Đây là nền tảng cho phép các công ty chạy các ứng dụng AI ở quy mô lớn mà không cần tự xây dựng trung tâm dữ liệu tốn kém.",
           },
         ],
         imageUrl:
-          "https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=800&h=600&fit=crop",
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762723479/cloudcomputing_eqlg8n.jpg",
+      },
+      {
+        id: "4-5",
+        year: "Hiện tại",
+        title: "Công nghệ khác",
+        descriptions: [
+          {
+            id: 1,
+            content:
+              "In 3D (Sản xuất bồi đắp): Cho phép sản xuất các bộ phận phức tạp theo yêu cầu ngay tại chỗ.",
+          },
+          {
+            id: 2,
+            content:
+              "Blockchain (Công nghệ chuỗi khối): Cung cấp một sổ cái phi tập trung, minh bạch và an toàn cho các giao dịch và quản lý chuỗi cung ứng.",
+          },
+          {
+            id: 3,
+            content:
+              "Robotics tiên tiến (Cobots): Robot cộng tác làm việc an toàn bên cạnh con người, thay vì bị nhốt trong lồng an toàn.",
+          },
+        ],
+        imageUrl:
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762723476/blockchain_thrbjk.jpg",
+      },
+      {
+        id: "4-6",
+        year: "Tác động",
+        title: "Tác động chính của 4.0",
+        descriptions: [
+          {
+            id: 1,
+            content:
+              'Sự ra đời của "Nhà máy thông minh" (Smart Factory), nơi máy móc tự giao tiếp, tự tối ưu hóa và dự đoán lỗi.',
+          },
+          {
+            id: 2,
+            content:
+              "Cá nhân hóa sản phẩm và dịch vụ ở quy mô lớn (ví dụ: quảng cáo nhắm chính xác đến bạn, sản phẩm được tùy chỉnh theo ý riêng).",
+          },
+          {
+            id: 3,
+            content:
+              "Thay đổi hoàn toàn mô hình kinh doanh truyền thống và thị trường lao động, đòi hỏi các kỹ năng mới.",
+          },
+        ],
+        imageUrl:
+          "https://res.cloudinary.com/dt3uzyfcg/image/upload/v1762722924/ir4_pvg3d4.jpg",
       },
     ],
   },
