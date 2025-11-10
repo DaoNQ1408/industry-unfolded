@@ -133,18 +133,18 @@ export const quizData: QuizQuestion[] = [
     "points": 10,
     "explanation": "Thuật ngữ 'Industrie 4.0' (Công nghiệp 4.0) được đưa ra tại Hội chợ Hannover ở Đức vào năm 2011, là một phần của chiến lược công nghệ cao của chính phủ Đức."
   },
-  {
-    "id": "q11",
-    "question": "Công nghệ cốt lõi của Cách mạng công nghiệp 4.0 là gì?",
-    "options": [
-      { "id": "q11-a", "text": "Tự động hóa đơn giản", "isCorrect": false },
-      { "id": "q11-b", "text": "Hệ thống không gian mạng-vật lý (Cyber-Physical Systems)", "isCorrect": true },
-      { "id": "q11-c", "text": "Sản xuất hàng loạt", "isCorrect": false },
-      { "id": "q11-d", "text": "Điện khí hóa", "isCorrect": false }
-    ],
-    "points": 10,
-    "explanation": "CMCN 4.0 dựa trên Hệ thống không gian mạng-vật lý (CPS), nơi thế giới ảo (phần mềm, dữ liệu) và thế giới thực (máy móc) hội tụ."
-  },
+  // {
+  //   "id": "q11",
+  //   "question": "Công nghệ cốt lõi của Cách mạng công nghiệp 4.0 là gì?",
+  //   "options": [
+  //     { "id": "q11-a", "text": "Tự động hóa đơn giản", "isCorrect": false },
+  //     { "id": "q11-b", "text": "Hệ thống không gian mạng-vật lý (Cyber-Physical Systems)", "isCorrect": true },
+  //     { "id": "q11-c", "text": "Sản xuất hàng loạt", "isCorrect": false },
+  //     { "id": "q11-d", "text": "Điện khí hóa", "isCorrect": false }
+  //   ],
+  //   "points": 10,
+  //   "explanation": "CMCN 4.0 dựa trên Hệ thống không gian mạng-vật lý (CPS), nơi thế giới ảo (phần mềm, dữ liệu) và thế giới thực (máy móc) hội tụ."
+  // },
   {
     "id": "q12",
     "question": "Thuật ngữ nào sau đây KHÔNG liên quan trực tiếp đến CMCN 4.0?",
