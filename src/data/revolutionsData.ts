@@ -1090,7 +1090,7 @@ export const revolutionsData: Revolution[] = [
       {
         id: "4-6",
         year: "Tác động",
-        title: "Tác động chính của 4.0",
+        title: "Tác động chính",
         descriptions: [
           {
             id: 1,
