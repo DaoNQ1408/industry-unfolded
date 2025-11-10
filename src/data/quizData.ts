@@ -186,7 +186,7 @@ export const quizData: QuizQuestion[] = [
     "question": "Yếu tố nào phân biệt rõ rệt nhất giữa CMCN 3.0 và CMCN 4.0?",
     "options": [
       { "id": "q15-a", "text": "Sự xuất hiện của máy tính", "isCorrect": false },
-      { "id": "q15-b", "text": "Sự hội tụ của công nghệ (ảo-thực), tốc độ và quy mô", "isCorrect": true },
+      { "id": "q15-b", "text": "Sự hội tụ của công nghệ, tốc độ và quy mô", "isCorrect": true },
       { "id": "q15-c", "text": "Việc sử dụng điện", "isCorrect": false },
       { "id": "q15-d", "text": "Việc cơ khí hóa", "isCorrect": false }
     ],
@@ -399,7 +399,7 @@ export const quizData: QuizQuestion[] = [
   },
   {
     "id": "q33",
-    "question": "Công nghệ 'Blockchain' (Chuỗi khối) trong CMCN 4.0 chủ yếu giải quyết vấn đề gì?",
+    "question": "Công nghệ 'Blockchain' trong CMCN 4.0 chủ yếu giải quyết vấn đề gì?",
     "options": [
       { "id": "q33-a", "text": "Tăng tốc độ Internet", "isCorrect": false },
       { "id": "q33-b", "text": "Tạo ra robot thông minh hơn", "isCorrect": false },
@@ -486,7 +486,7 @@ export const quizData: QuizQuestion[] = [
     "question": "Sự khác biệt cơ bản giữa robot của CMCN 3.0 và CMCN 4.0 là gì?",
     "options": [
       { "id": "q40-a", "text": "Robot 3.0 dùng điện, robot 4.0 dùng hơi nước", "isCorrect": false },
-      { "id": "q40-b", "text": "Robot 3.0 được lập trình (lặp lại), robot 4.0 có thể tự học (AI, tự trị)", "isCorrect": true },
+      { "id": "q40-b", "text": "Robot 3.0 được lập trình (lặp lại), robot 4.0 có thể tự học (AI)", "isCorrect": true },
       { "id": "q40-c", "text": "Robot 3.0 lớn, robot 4.0 nhỏ", "isCorrect": false },
       { "id": "q40-d", "text": "Không có sự khác biệt, chúng giống hệt nhau", "isCorrect": false }
     ],
